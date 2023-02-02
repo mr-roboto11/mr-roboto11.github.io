@@ -147,11 +147,19 @@
             margin-right: auto;
             width: 50%;
           }
+
           /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
           @media screen and (max-width:600px) {
             .column {
               width: 100%;
             }
+            #logo-image{
+            width: 100%;
+          }
+          p{
+            margin-left: 5%;
+            margin-right: 5%;
+          }
           }
           </style>
 
@@ -169,13 +177,24 @@
           <main class="row">
             <hr>
             <hr>
-              <h1>The Independent Thinker</h1>
+              <h1>About</h1>
           <hr>
           <hr>
            </main>
-           <img src="/thinkingman-logo.png" alt="">
+           <img id="logo-image" src="/logo-image.gif" alt="">
            <hr style="border:10px solid black">
 
+           <section id="one" class="row">
+          <p>I'm a self taught artist, designer, developer, and writer</p>
+        </section>
+
+        <a href="https://github.com/mr-roboto11">
+          <h2>My Github Repo</h2>
+        </a>
+
+        <a href="https://www.artstation.com/kinmedia11">
+          <h2>My Artstation Profile</h2>
+        </a>
 
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
