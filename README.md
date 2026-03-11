@@ -1,1 +1,1 @@
-This is a blog project that utilizes CI/CD via Github Actions
+This is a blog project coded in HTML and CSS that utilizes CI/CD via Github Actions
