@@ -164,6 +164,50 @@ img{
 }
 
 
+   /* 1. Core Centering Rules */
+    .pagination-container {
+      display: flex;
+      justify-content: center; /* Centers items horizontally */
+      margin: 20px 0;
+    }
+
+    .pagination {
+      display: flex;
+      list-style: none; /* Removes bullet points */
+      padding: 0;
+      margin: 0;
+      gap: 5px; /* Adds space between buttons */
+    }
+
+    /* 2. Visual Styling for Buttons */
+    .pagination a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 3px solid #111;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Hover State */
+    .pagination a:hover:not(.active) {
+      background-color: #f0f0f0;
+    }
+
+    /* Active Page State */
+    .pagination a.active {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+    }
+    
+    /* Disabled State (e.g. for arrows on first/last pages) */
+    .pagination a.disabled {
+      color: #fff;
+      pointer-events: none;
+      border-color: #eee;
+    }
+
 /* div>iframe{
     display: block;
   margin-left: auto;
@@ -213,6 +257,17 @@ img{
 <hr>
 <hr>
 </main>
+
+ <!-- Semantic Navigation Container -->
+  <nav class="pagination-container" aria-label="Pagination Navigation">
+    <ul class="pagination">
+      <li><a href="index.html" aria-label="Previous page">&laquo;</a></li>
+      <li><a href="index.html">1</a></li>
+      <li><a href="#" class="active" aria-current="page">2</a></li>
+      <li><a href="article3.html">3</a></li>
+      <li><a href="article3.html" aria-label="Next page">&raquo;</a></li>
+    </ul>
+  </nav>
 
 
 <h2 style="font-size: 2em; padding: 10px;">Money This, Money That</h2>
